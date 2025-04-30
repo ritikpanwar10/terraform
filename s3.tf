@@ -4,7 +4,7 @@ provider "aws" {
 
 resource "aws_s3_bucket" "my_bucket" {
   bucket = "ritikpanwar-unique-bucket-name"  # Bucket name must be globally unique
-  acl    = "private"
+  aws_s3_bucket_acl    = "private"
 
   tags = {
     Name        = "MyS3Bucket"
