@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_key_pair" "key1" {
-    key_name   = "key1" # Replace with your existing key name
+    key_name   = "key1-new" # Replace with your existing key name
     public_key = file("/home/panwar/Downloads/key1.pub") # Replace with the path to your public key
 }
 
